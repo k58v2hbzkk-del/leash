@@ -86,7 +86,7 @@
     <h2 class="center">Any agent, one endpoint</h2>
     <p class="sub center">An LLM, a bot or a script. It gets a Leash key, never an exchange key.</p>
     <div class="code"><span class="c"># your agent asks, Leash decides</span>
-curl -X POST <span class="a">https://leash.onrender.com</span>/api/intent \
+curl -X POST <span class="a">https://leash-1-b3ga.onrender.com</span>/api/intent \
   -H "x-agent-key: $LEASH_KEY" -H "content-type: application/json" \
   -d '{"coin":"ETH","side":"long","leverage":3,"usd":1500,"reason":"Model sees a breakout"}'
 

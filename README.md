@@ -6,6 +6,8 @@
 
 AI agents that trade for you are here. Leaving them alone with your account is a bad idea. Leash sits between your agents and the exchange: small trades inside your rules go through, risky ones wait for a glance and a tap on your Even G2, and anything that breaks your rules is blocked before it reaches the market.
 
+**Live:** https://leash-1-b3ga.onrender.com · **App:** https://leash-1-b3ga.onrender.com/app/
+
 Built for **Heads Up: Even Realities Hackathon** (TVM Ventures × Daos Hub), track **Crypto & DeFi** (Hyperliquid).
 
 | An agent wants to size up | A rule-breaker gets blocked | Your positions at a glance |
