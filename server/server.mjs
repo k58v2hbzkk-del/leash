@@ -8,7 +8,8 @@ import { state, bus, submit, decide, close, setKill, housekeeping, snapshot, res
 import { createAgents, startAgents, demoScript } from './agents.mjs'
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
-const STATIC = [path.join(ROOT, '..', 'glasses', 'dist')]
+const SITE = path.join(ROOT, '..', 'site')
+const APP = path.join(ROOT, '..', 'glasses', 'dist')
 const PORT = Number(process.env.PORT ?? 8787)
 
 startMarket()
@@ -49,10 +50,14 @@ function limited(req) {
   return h.length > 40
 }
 
-const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.json': 'application/json', '.mp4': 'video/mp4' }
+const TYPES = { '.woff2': 'font/woff2', '.jpg': 'image/jpeg', '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.json': 'application/json', '.mp4': 'video/mp4' }
 function serveStatic(res, pathname) {
-  const rel = pathname === '/' ? 'index.html' : decodeURIComponent(pathname).replace(/^\/+/, '')
-  for (const dir of STATIC) {
+  // /app/* is the Even Hub app (glasses + phone); everything else is the website
+  const inApp = pathname === '/app' || pathname.startsWith('/app/')
+  const dir0 = inApp ? APP : SITE
+  let rel = decodeURIComponent(inApp ? pathname.replace(/^\/app\/?/, '') : pathname).replace(/^\/+/, '')
+  if (!rel || rel.endsWith('/')) rel += 'index.html'
+  for (const dir of [dir0]) {
     const f = path.join(dir, rel)
     if (f.startsWith(dir) && fs.existsSync(f) && fs.statSync(f).isFile()) {
       res.writeHead(200, { 'content-type': TYPES[path.extname(f)] ?? 'application/octet-stream', ...cors })

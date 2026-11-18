@@ -1,3 +1,5 @@
+<img src="site/brand/logo-light.svg" alt="Leash" height="64" />
+
 # Leash
 
 **Approve your AI trading agents from your glasses.**
@@ -67,12 +69,16 @@ See [`examples/my-agent.mjs`](examples/my-agent.mjs).
 - **Default is no.** Unanswered approvals expire as rejected; the kill switch rejects everything pending.
 - No financial advice: the demo agents are examples of agents to control, not strategies to follow.
 
+## Website
+
+The server also hosts the Leash website (`site/`) at `/`, with a live mirror of the G2 screen you can approve from, and the Even Hub app at `/app/`.
+
 ## Run it
 
 ```bash
 npm run build      # builds the glasses + phone app into glasses/dist
 npm start          # Leash server on :8787 (serves the app too)
-npx evenhub-simulator http://localhost:8787   # from glasses/, or sideload with: npx evenhub qr --url http://<ip>:8787
+npx evenhub-simulator http://localhost:8787/app/   # from glasses/; on real G2: npx evenhub qr --url http://<ip>:8787/app/
 ```
 
 `AGENTS=off` disables the demo agents; the phone screen's **Demo controls** fire a fixed sequence for recording.

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Leash: approve your AI trading agents from your glasses</title>
+<meta name="description" content="Leash sits between your AI trading agents and the exchange. Small trades inside your rules go through, risky ones wait for a glance and a tap on Even G2, rule-breakers are blocked." />
+<meta property="og:image" content="/img/hero.jpg" />
+<meta name="theme-color" content="#EEEDEA" />
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<main id="top">
+  <section class="hero">
+    <div class="frame" style="background-image:url(/img/hero.jpg)">
+      <a class="logo-pill" href="#top"><img src="/brand/mark.svg" alt="" /><span>Leash</span></a>
+      <nav class="tabs"><a href="#live">Live</a><a href="#rules">Rules</a><a href="#plug">Plug in</a></nav>
+      <div class="round">
+        <a href="https://github.com/k58v2hbzkk-del/leash" target="_blank" rel="noopener" aria-label="Code"><svg viewBox="0 0 24 24"><path d="M9 8l-4 4 4 4M15 8l4 4-4 4"/></svg></a>
+        <a href="#live" aria-label="Live demo"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a>
+      </div>
+      <h1 class="hero-title">Your AI agents,<br />on a leash</h1>
+      <div class="floats">
+        <div class="float text"><small>Even G2 · Hyperliquid</small><b>Approve risky trades<br />with one glance</b></div>
+        <div class="float who"><img src="/brand/icon.png" alt="" /><div><small>Our mission</small><b>Let agents trade without letting them run wild</b></div><span class="arrow">↗</span></div>
+        <a class="float pic" href="#live" style="background-image:url(/img/row.jpg)"><span>Watch it live →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <p class="eyebrow">Heads Up · Crypto &amp; DeFi</p>
+    <h2>Agents trade.<br />You hold the leash.</h2>
+    <p class="sub">AI agents that trade for you are here. Leaving them alone with your account is not. Leash checks every trade against your rules, lets the small ones through, blocks the reckless ones, and asks you about the rest on your Even G2. One glance, one tap.</p>
+    <div class="chips" aria-hidden="true">
+      <div class="track">
+        <span>Max leverage</span><span>Max size</span><span>Coin allow-list</span><span>Daily loss stop</span><span>Ask-me line</span><span>30 s, no answer = no</span><span>Kill switch</span><span>Live Hyperliquid prices</span><span>Paper trading</span><span>Agents never hold keys</span>
+        <span>Max leverage</span><span>Max size</span><span>Coin allow-list</span><span>Daily loss stop</span><span>Ask-me line</span><span>30 s, no answer = no</span><span>Kill switch</span><span>Live Hyperliquid prices</span><span>Paper trading</span><span>Agents never hold keys</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="live">
+    <p class="eyebrow center">Live right now</p>
+    <h2 class="center">What your glasses see</h2>
+    <p class="sub center">Three agents trade on live Hyperliquid prices with paper money. When one asks for something big, it lands here, and on the G2.</p>
+    <div class="live-grid">
+      <div class="lens-wrap">
+        <small><span>Even G2 · 576 × 288</span><span id="src">connecting…</span></small>
+        <div class="lens"><div class="h" id="lh">LEASH</div><div class="b" id="lb">Connecting to Leash…</div><div class="f" id="lf"></div></div>
+        <div class="lens-btns"><button class="ok" id="ok" disabled>Tap · approve</button><button class="no" id="no" disabled>Swipe · reject</button></div>
+      </div>
+      <div class="side">
+        <div class="card"><h3>Paper account</h3><div class="eq" id="eq">—</div><div class="muted" id="pnl"></div>
+          <div class="mini"><div><b id="sAuto">0</b><span>inside rules</span></div><div><b id="sOk">0</b><span>approved</span></div><div><b id="sNo">0</b><span>said no</span></div><div><b id="sBlk">0</b><span>blocked</span></div></div></div>
+        <div class="card"><h3>Decisions</h3><ul class="feed" id="feed"></ul></div>
+      </div>
+    </div>
+    <div class="pick"><button class="pill-btn dark" data-demo="2">Ask for a big ETH trade</button><button class="pill-btn" data-demo="1">Let Degen try 25x DOGE</button><button class="pill-btn" data-demo="4">Degen: 60% of the account</button></div>
+  </section>
+
+  <section id="rules">
+    <p class="eyebrow center">The rules engine</p>
+    <h2 class="center">Every trade gets one of three answers</h2>
+    <div class="verdicts">
+      <article class="acid"><span class="tag">Goes through</span><b>Inside your rules</b><p>Small, sensible trades fill on their own. You don't get bothered.</p><ul><li>Under your ask-me size</li><li>Under your ask-me leverage</li><li>Closing risk, always</li></ul></article>
+      <article><span class="tag">Needs you</span><b>One glance, one tap</b><p>Bigger trades wait on your G2 with size, liquidation distance and the agent's reason. No answer in 30 seconds means no.</p><ul><li>Re-checked the moment you tap</li><li>Approve from glasses or phone</li></ul></article>
+      <article class="dark"><span class="tag">Blocked</span><b>Never reaches the market</b><p>Rule-breakers are stopped on the server, so a hacked or buggy agent can't talk its way past.</p><ul><li>Over max leverage or size</li><li>Coin not on its list</li><li>Daily loss hit, agent paused</li><li>Kill switch on</li></ul></article>
+    </div>
+  </section>
+
+  <section class="feature-img">
+    <div class="frame wide" style="background-image:url(/img/mark.jpg)"><span class="stat"><b>0</b>exchange keys given to agents</span></div>
+    <div class="split">
+      <h2>Agents never hold your keys</h2>
+      <div>
+        <p>An agent doesn't place orders. It sends an intent to Leash: coin, side, leverage, size and a reason. Leash is the only thing that can trade, and it checks your rules first.</p>
+        <p>Your glasses only ever see one card at a time: who wants what, how much of your account it uses, how far it is from liquidation, and which of your lines it crossed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plug">
+    <p class="eyebrow center">Plug in your own agent</p>
+    <h2 class="center">Any agent, one endpoint</h2>
+    <p class="sub center">An LLM, a bot or a script. It gets a Leash key, never an exchange key.</p>
+    <div class="code"><span class="c"># your agent asks, Leash decides</span>
+curl -X POST <span class="a">https://leash.onrender.com</span>/api/intent \
+  -H "x-agent-key: $LEASH_KEY" -H "content-type: application/json" \
+  -d '{"coin":"ETH","side":"long","leverage":3,"usd":1500,"reason":"Model sees a breakout"}'
+
+<span class="c"># → { "type": "filled" }    inside your rules
+# → { "type": "approval" }  waiting for your glasses
+# → { "type": "blocked" }   broke a rule, never placed</span></div>
+  </section>
+
+  <section class="cta">
+    <div>
+      <p class="eyebrow">Try it yourself</p>
+      <h2>Hold the leash<br />from your phone</h2>
+      <p class="sub">Open the same app the G2 runs: set each agent's limits, approve, reject, or pause them all.</p>
+      <a class="pill-btn dark" href="/app/">Open the Leash app</a>
+    </div>
+    <a class="frame cta-img" href="/app/" style="background-image:url(/img/hero.jpg)"><span class="chip-on">Open the app ↗</span></a>
+  </section>
+</main>
+
+<footer>
+  <div class="logo-pill plain"><img src="/brand/mark.svg" alt="" /><span>Leash</span></div>
+  <p>Built by Tajudeen (@Tajudeen) for Heads Up: Even Realities Hackathon · Crypto &amp; DeFi. Paper trading on live Hyperliquid prices. Not financial advice. MIT licensed.</p>
+  <p><a href="https://github.com/k58v2hbzkk-del/leash" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
+<script type="module" src="/site.js"></script>
+</body>
+</html>
