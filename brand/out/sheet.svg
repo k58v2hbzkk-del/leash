@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000"><rect width="1600" height="1000" fill="#EEEDEA"/><rect x="40" y="40" width="740" height="560" rx="40" fill="#E4E2DD"/><g transform="translate(180 100) scale(1.8333333333333333)">
   <circle cx="78" cy="120" r="46" fill="none" stroke="#121211" stroke-width="26"/>
   <rect x="118" y="107" width="62" height="26" rx="13" fill="#121211"/>
-  <circle cx="190" cy="120" r="32" fill="#C8F23A"/>
+  <circle cx="190" cy="120" r="32" fill="#F0388B"/>
 </g><rect x="820" y="40" width="740" height="560" rx="40" fill="#121211"/><g transform="translate(960 100) scale(1.8333333333333333)">
   <circle cx="78" cy="120" r="46" fill="none" stroke="#EEEDEA" stroke-width="26"/>
   <rect x="118" y="107" width="62" height="26" rx="13" fill="#EEEDEA"/>
-  <circle cx="190" cy="120" r="32" fill="#C8F23A"/>
+  <circle cx="190" cy="120" r="32" fill="#F0388B"/>
 </g><rect x="40" y="640" width="1040" height="320" rx="40" fill="#fff"/><g transform="translate(80 690) scale(0.9166666666666666)">
   <circle cx="78" cy="120" r="46" fill="none" stroke="#121211" stroke-width="26"/>
   <rect x="118" y="107" width="62" height="26" rx="13" fill="#121211"/>
-  <circle cx="190" cy="120" r="32" fill="#C8F23A"/>
+  <circle cx="190" cy="120" r="32" fill="#F0388B"/>
 </g><text x="320" y="850" font-family="Inter Display, Inter, sans-serif" font-weight="600" font-size="150" letter-spacing="-6.8" fill="#121211">Leash</text><rect x="1120" y="640" width="440" height="320" rx="40" fill="#E4E2DD"/><rect x="1240" y="700" width="200" height="200" rx="46" fill="#121211"/><g transform="translate(1250 714) scale(0.7166666666666667)">
   <circle cx="78" cy="120" r="46" fill="none" stroke="#EEEDEA" stroke-width="26"/>
   <rect x="118" y="107" width="62" height="26" rx="13" fill="#EEEDEA"/>
-  <circle cx="190" cy="120" r="32" fill="#C8F23A"/>
+  <circle cx="190" cy="120" r="32" fill="#F0388B"/>
 </g></svg>

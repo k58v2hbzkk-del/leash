@@ -1,5 +1,5 @@
 # Leash mark: a handle loop, a taut line, and the agent at the end of it (acid green).
-INK, PAPER, ACID = '#121211', '#EEEDEA', '#C8F23A'
+INK, PAPER, ACID = '#121211', '#EEEDEA', '#F0388B'
 
 def mark(fg=INK, size=240, x=0, y=0, dot=ACID):
     s = size / 240
