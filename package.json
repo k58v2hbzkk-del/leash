@@ -1,0 +1,11 @@
+{
+  "name": "leash",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "cd glasses && npm install && npm run build",
+    "start": "node server/server.mjs",
+    "dev": "node server/server.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
