@@ -9,6 +9,8 @@ const pct = (n) => `${(n * 100).toFixed(2)}%`
 export function createAgents() {
   addAgent('Momentum', 'Rides short bursts on majors')
   addAgent('Carry', 'Farms funding rates', { approveAbovePct: 15 })
+  // Your own agent (an LLM, a bot, anything) plugs in over HTTP with this key.
+  if (process.env.EXTERNAL_AGENT_KEY) addAgent('External', 'Your own agent over the API', { approveAbovePct: 5 }, process.env.EXTERNAL_AGENT_KEY)
   addAgent('Degen', 'High-risk agent, kept on a short leash', { maxLeverage: 5, allowedCoins: ['BTC', 'ETH', 'SOL', 'HYPE'], approveAbovePct: 8 })
 }
 

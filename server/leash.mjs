@@ -37,8 +37,7 @@ export const state = {
   stats: { approved: 0, rejected: 0, blocked: 0, auto: 0, expired: 0 },
 }
 
-export function addAgent(name, kind, rules = {}) {
-  const key = 'lsh_' + crypto.randomBytes(12).toString('hex')
+export function addAgent(name, kind, rules = {}, key = 'lsh_' + crypto.randomBytes(12).toString('hex')) {
   state.agents[name] = { name, kind, key, rules: { ...DEFAULT_RULES, ...rules }, paused: false, pausedReason: null, pnlToday: 0, orders: [] }
   return state.agents[name]
 }
