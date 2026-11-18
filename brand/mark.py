@@ -1,7 +1,8 @@
 # Leash mark: a handle loop, a taut line, and the agent at the end of it (acid green).
-INK, PAPER, ACID = '#121211', '#EEEDEA', '#F0388B'
+INK, PAPER, CREAM = '#121211', '#EEEDEA', '#E6DFCF'
 
-def mark(fg=INK, size=240, x=0, y=0, dot=ACID):
+def mark(fg=INK, size=240, x=0, y=0, dot=None):
+    dot = dot or fg
     s = size / 240
     return f'''<g transform="translate({x} {y}) scale({s})">
   <circle cx="78" cy="120" r="46" fill="none" stroke="{fg}" stroke-width="26"/>
